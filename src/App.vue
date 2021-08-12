@@ -1,15 +1,15 @@
 <template>
-  <div>hi</div>
-  <Ma />
+  <div>
+    导航栏 |
+    <router-link to="/">Mark</router-link> |
+    <router-link to="/xxx">Mark 2</router-link>
+  </div>
+  <hr />
+  <router-view />
 </template>
 
 <script>
-import Ma from "./components/Ma.vue";
-
 export default {
   name: "App",
-  components: {
-    Ma,
-  },
 };
 </script>
