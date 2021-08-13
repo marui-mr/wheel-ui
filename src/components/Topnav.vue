@@ -13,7 +13,7 @@ import { inject, Ref } from "vue";
 export default {
   name: "Topnav",
   setup() {
-    const asideVisible = inject<Ref<boolean>>("xxx");
+    const asideVisible = inject<Ref<boolean>>("asideVisible");
     const toogleAside = () => {
       asideVisible.value = !asideVisible.value;
     };
