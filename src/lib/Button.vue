@@ -182,7 +182,7 @@ $grey: grey;
     display: inline-block;
     width: 14px;
     height: 14px;
-    background: red;
+    background: white;
     margin-right: 4px;
     border-radius: 7px;
     border-color: $blue $blue $blue transparent;
