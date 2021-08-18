@@ -46,8 +46,14 @@
   <h1>示例4</h1>
   <div>
     <Button disabled>禁用按钮</Button>
-    <Button theme="link" disabled>禁用链接按钮</Button>
-    <Button theme="text" disabled>禁用文字按钮</Button>
+    <Button theme="link" disabled>链接禁用按钮</Button>
+    <Button theme="text" disabled>文字禁用按钮</Button>
+  </div>
+  <h1>示例5</h1>
+  <div>
+    <Button loading>加载中</Button>
+    <Button theme="link" loading>加载中</Button>
+    <Button theme="text" loading>加载中</Button>
   </div>
 </template>
 
