@@ -12,7 +12,11 @@
       </div>
     </div>
     <div class="wheel-tabs-content">
-      <component class="wheel-tabs-content-item" :is="current"></component>
+      <component
+        class="wheel-tabs-content-item"
+        :is="current"
+        :key="selected"
+      ></component>
     </div>
   </div>
 </template>
