@@ -3,6 +3,8 @@
     <div class="wheel-tabs-nav">
       <div
         class="wheel-tabs-nav-item"
+        :class="{ selected: t === selected }"
+        @click="select(t)"
         v-for="(t, index) in titles"
         :key="index"
       >
@@ -10,19 +12,20 @@
       </div>
     </div>
     <div class="wheel-tabs-content">
-      <component
-        class="wheel-tabs-content-item"
-        v-for="(c, index) in defaults"
-        :key="index"
-        :is="c"
-      ></component>
+      <component class="wheel-tabs-content-item" :is="current"></component>
     </div>
   </div>
 </template>
 
 <script lang="ts">
+import { computed } from "vue";
 import Tab from "../lib/Tab.vue";
 export default {
+  props: {
+    selected: {
+      type: String,
+    },
+  },
   setup(props, context) {
     const defaults = context.slots.default();
     defaults.forEach((tag) => {
@@ -33,7 +36,15 @@ export default {
     const titles = defaults.map((tag) => {
       return tag.props.title;
     });
-    return { defaults, titles };
+    const current = computed(() => {
+      return defaults.filter((tag) => {
+        return tag.props.title === props.selected;
+      })[0];
+    });
+    const select = (newTitle: String) => {
+      context.emit("update:selected", newTitle);
+    };
+    return { defaults, titles, current, select };
   },
 };
 </script>
