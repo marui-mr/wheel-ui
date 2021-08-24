@@ -52,7 +52,7 @@ export default {
 
 <style lang="scss" scoped>
 .router-link-active {
-  text-decoration: underline;
+  color: #0a8b9f;
 }
 .layout {
   display: flex;
@@ -82,7 +82,7 @@ export default {
   }
 }
 aside {
-  background: lightblue;
+  background: #dcf4fc;
   width: 150px;
   padding: 16px;
   position: fixed;
