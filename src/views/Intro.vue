@@ -1,5 +1,5 @@
 <template>
-  <article>
+  <article class="markdown-body">
     <h1>介绍</h1>
     <p>Wheel UI 是一款基于 Vue 3 和 TypeScript 的 UI 组件库。</p>
     <p>
@@ -14,6 +14,6 @@
       github.com/xxxxxxx，历史提交信息非常规范准确，你可以按照提交的顺序逐个查看；你也可以直接查看每个组件的源代码和示例，运行方法见
       README.md。
     </p>
-    下一节：<a href="#/doc/install">安装</a>
+    下一节：<a href="#/doc/install" style="color: #0a8b9f">安装</a>
   </article>
 </template>
