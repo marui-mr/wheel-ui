@@ -44,6 +44,7 @@ export default {
     rgba(220, 244, 252, 1) 0%,
     rgba(195, 241, 252, 1) 100%
   );
+  clip-path: ellipse(80% 60% at 50% 40%);
 }
 .features {
   > svg {
