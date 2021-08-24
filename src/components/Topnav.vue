@@ -29,6 +29,7 @@ export default {
 
 <style lang="scss" scoped>
 .topnav {
+  color: #0a8b9f;
   display: flex;
   justify-content: center;
   align-items: center;
