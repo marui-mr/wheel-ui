@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="topnavAndBanner">
     <Topnav />
     <div class="banner">
       <h1>Wheel UI</h1>
@@ -20,13 +20,19 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.topnavAndBanner {
+  background: linear-gradient(
+    145deg,
+    rgba(220, 244, 252, 1) 0%,
+    rgba(195, 241, 252, 1) 100%
+  );
+}
 .banner {
   padding: 100px 0;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background: lightgreen;
   > .actions {
     padding: 8px 0;
     a {
