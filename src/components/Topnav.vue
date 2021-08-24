@@ -1,16 +1,16 @@
 <template>
   <div class="topnav">
-    <div class="logo">
+    <router-link to="/" class="logo">
       <svg class="icon">
         <use xlink:href="#icon-ui"></use>
       </svg>
-    </div>
+    </router-link>
     <ul class="menu">
       <li>
         <router-link to="/doc">文档</router-link>
       </li>
     </ul>
-    <span class="toggleAside" @click="toogleAside">
+    <span v-if="toggleAsideVisible" class="toggleAside" @click="toogleAside">
       <svg class="icon">
         <use xlink:href="#icon-toggle"></use>
       </svg>
@@ -21,7 +21,12 @@
 <script lang="ts">
 import { inject, Ref } from "vue";
 export default {
-  name: "Topnav",
+  props: {
+    toggleAsideVisible: {
+      type: Boolean,
+      default: false,
+    },
+  },
   setup() {
     const asideVisible = inject<Ref<boolean>>("asideVisible");
     const toogleAside = () => {
