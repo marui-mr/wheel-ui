@@ -12,7 +12,7 @@
         </div>
       </div>
       <div class="actions">
-        <a href="https://github.com">GitHub</a>
+        <a href="https://github.com/marui-mr/wheel-ui">GitHub</a>
         <router-link to="/doc">开始</router-link>
       </div>
     </div>
