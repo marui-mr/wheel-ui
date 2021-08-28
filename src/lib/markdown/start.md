@@ -4,7 +4,7 @@
 
 你需要在代码中引入相应组件,代码如下：
 
-```import {Button, Tabs, Switch, Dialog} from "wheel-ui"```
+```import {Button, Tabs, Tab, Switch, Dialog, openDialog} from "wheel-ui"```
 
 然后就可以开始使用我提供的组件了。
 
@@ -22,7 +22,7 @@
 </template>
 
 <script lang="ts">
-import {Button, Tabs, Switch, Dialog} from "wheel-ui"
+import {Button, Tabs, Tab, Switch, Dialog, openDialog} from "wheel-ui"
 
 export default {
   components: {Button}
