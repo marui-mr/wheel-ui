@@ -132,13 +132,16 @@ export default {
   }
   > .actions {
     padding: 16px 0;
+    display: flex;
+    justify-content: center;
     a {
-      margin: 0 48px;
+      margin: 0 40px;
       background: #102e46;
       display: inline-block;
       padding: 8px 24px;
       color: #efffff;
       border-radius: 22px;
+      white-space: nowrap;
       &:first-child {
         background: #c6e2eb;
         color: #0f2e3d;
